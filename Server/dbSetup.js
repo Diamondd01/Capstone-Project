@@ -17,7 +17,7 @@ const connectionString = process.env.CONNECTION_STRING;
 const pool = new Pool({
   connectionString: connectionString,
   ssl: {
-    rejectUnauthorized: false, // Disable SSL
+    rejectUnauthorized: false, 
   },
 });
 
