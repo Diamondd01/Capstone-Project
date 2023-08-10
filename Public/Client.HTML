@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <header>Hairstyle Quiz</header>
+  <link rel="stylesheet" href="Index.css"> 
+</head>
+<body>
+  <p style="background-image: url('Collage.png');"></p>
+  <h1>What should your next style be?</h1>
+   <section id="Intro">
+    <summary>In this quiz after you sign up based on your responses we will suggest some hairstyles for you. </summary>
+  </section>
+  <form id="signupForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Sign Up</button>
+  </form>
+  <div id="questionContainer" style="display: none;">
+    <form id="quizForm">
+    <h2 id="question"></h2>
+    <div id="choices"></div>
+    <button id="submitBtn">Submit</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  <div id="box">
+    <button id="startBtn">Start</button>
+  </div>
+  <div id="suggestionContainer" style="display: none;">
+  </div>
+  <div id="messageContainer" class="dropdown-Container"></div>
+</section>
+<section>
+  <div id="userLoggedInContainer" style="display: none;">
+    <h2>Welcome, <span id="loggedInUsername"></span>!</h2>
+    <div>
+      <h3>Your Liked Styles:</h3>
+      <ul id="likedStylesList"></ul>
+    </div>
+    <div>
+      <h3>Your Favorite Styles:</h3>
+      <ul id="favoriteStylesList"></ul>
+    </div>
+  </div>
+</section>
+ <aside>
+  <P>Enjoy the experince of not having to stress over finding a new hairstyle</P>
+</aside>
+<footer>
+  <div class="image-row">
+    <img src="image1.jpg" alt="Image 1">
+    <img src="image2.jpg" alt="Image 2">
+    <img src="image3.jpg" alt="Image 3">
+    <img src="image4.jpg" alt="Image 4">
+  </div>
+</footer> 
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
